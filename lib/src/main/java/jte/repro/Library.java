@@ -12,7 +12,7 @@ public class Library {
     public String render(MyModel model) {
         var output = new StringOutput();
         var templateEngine = TemplateEngine.createPrecompiled(ContentType.Plain);
-        templateEngine.render("sometemplate", model, output);
+        templateEngine.render("sometemplate.jte", model, output);
 
         return output.toString();
     }
