@@ -21,3 +21,11 @@ jte {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+sourceSets {
+    main {
+        java {
+            srcDirs += file('jte-classes')
+        }
+    }
+}
